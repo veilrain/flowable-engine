@@ -101,7 +101,7 @@ public class FlowableEngineConfiguration {
         processEngineConfiguration.setDataSource(dataSource);
         processEngineConfiguration.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
         processEngineConfiguration.setTransactionManager(transactionManager);
-        processEngineConfiguration.setAsyncExecutorActivate(true);
+        processEngineConfiguration.setAsyncExecutorActivate(false);
         processEngineConfiguration.setAsyncExecutor(asyncExecutor());
         
         if (environment.getProperty("debugger.enabled", Boolean.class, false)) {
